@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Mi página web</title>
+	<!-- CDN de Google para jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- CDN de Google para jQuery UI -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+	
+  <!-- Archivo de estilo personalizado -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="contenedor-principal">
+    <h1>Fecha de Cumpleaños</h1>
+    <p>Hola! Por favor, introduce tu fecha de cumpleaños:</p>
+    <div id="contenedor-input">
+        <input type="text" id="calendario" style="display:none">
+        <div id="contenedor-botones">
+            <button onclick="abrirCalendario()">Abrir Calendario</button>
+            <button onclick="verificarFecha()">Entrar</button>
+        </div>
+    </div>
+</div>
+
+	<!-- Archivo de script personalizado -->
+	<script src="scripts.js"></script>
+  
+  </div>
+	
+</body>
+</html>
