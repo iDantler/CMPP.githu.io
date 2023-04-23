@@ -49,7 +49,7 @@ $(function() {
 	if (fecha.isValid() && fecha.year() == 1998 && fecha.month() == 4 && fecha.date() == 15) {
 	  window.location.href = "contador.html";
 	} else {
-	  alert("Fecha incorrecta. Inténtalo de nuevo.");
+	  alert("IIIINNNGGGGG ERROOOOOORRRR 404. PON LA FECHA BIEN");
 	}
   }
   
