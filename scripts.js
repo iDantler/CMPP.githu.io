@@ -47,7 +47,7 @@ $(function() {
 	var fechaString = $("#calendario").val();
 	var fecha = moment(fechaString, 'DD/MM/YYYY', true);
 	if (fecha.isValid() && fecha.year() == 1998 && fecha.month() == 4 && fecha.date() == 15) {
-	  window.location.href = "otra-pagina.html";
+	  window.location.href = "contador.html";
 	} else {
 	  alert("Fecha incorrecta. Inténtalo de nuevo.");
 	}

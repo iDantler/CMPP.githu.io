@@ -77,4 +77,3 @@ class Droppy {
   }
   
   new Droppy();
-  
