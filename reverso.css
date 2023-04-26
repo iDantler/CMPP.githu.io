@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 15vh;
     font-family: Arial, sans-serif;
   }
   
@@ -44,3 +44,45 @@
     text-overflow: ellipsis;
   }
   
+  #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial;
+  }
+  
+  .input-section {
+    width: 100%;
+    margin-bottom: 60px; /* Para subir o bajar el contador*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Agregado para centrar horizontalmente */
+  }
+  
+  .input-box {
+    max-width: 400px;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .submit-button {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    flex-shrink: 0;
+  }
+  
+  #text-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+  }

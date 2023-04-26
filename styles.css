@@ -1,16 +1,17 @@
-	body {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-		margin: 0;
-		background-image: url("https://media0.giphy.com/media/g9582DNuQppxC/giphy.gif?cid=ecf05e47ckx97q1alzyegajs1r90yxs7okuft61pc3vekrnt&rid=giphy.gif&ct=g");
-		background-repeat: no-repeat;
-		background-size: cover;
-		animation: animateBackground 8000s linear infinite;
-	}
-
-
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin: 0;
+	background-image: url("https://media0.giphy.com/media/g9582DNuQppxC/giphy.gif?cid=ecf05e47ckx97q1alzyegajs1r90yxs7okuft61pc3vekrnt&rid=giphy.gif&ct=g");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	animation: animateBackground 8000s linear infinite;
+  }
+  
 	@keyframes animateBackground {
 		from {
 			background-position: 0 0;
