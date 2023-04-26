@@ -1,150 +1,117 @@
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	margin: 0;
-	background-image: url("https://media0.giphy.com/media/g9582DNuQppxC/giphy.gif?cid=ecf05e47ckx97q1alzyegajs1r90yxs7okuft61pc3vekrnt&rid=giphy.gif&ct=g");
-	background-repeat: no-repeat;
-	background-size: cover;
-	animation: animateBackground 8000s linear infinite;
-}
-
-
-@keyframes animateBackground {
-	from {
-		background-position: 0 0;
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		margin: 0;
+		background-image: url("https://media0.giphy.com/media/g9582DNuQppxC/giphy.gif?cid=ecf05e47ckx97q1alzyegajs1r90yxs7okuft61pc3vekrnt&rid=giphy.gif&ct=g");
+		background-repeat: no-repeat;
+		background-size: cover;
+		animation: animateBackground 8000s linear infinite;
 	}
-	to {
-		background-position: 100% 100%;
+
+
+	@keyframes animateBackground {
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: 100% 100%;
+		}
 	}
-}
 
-#contenedor-principal {
-	width: 80%;
-	max-width: 800px;
-	margin: 0 auto;
-	text-align: center;
-	padding: 30px;
-	background-color: rgba(255, 255, 255, 0.8);
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-button {
-	padding: 10px 20px;
-	background-color: #0067a3;
-	color: white;
-	border: none;
-	cursor: pointer;
-}
-
-#calendario {
-	margin-top: 20px;
-	padding: 10px;
-	position: absolute;
-	left: 0;
-	top: 50px;
-}
-
-.ui-datepicker {
-	font-size: 1em;
-}
-
-.ui-datepicker.ui-widget {
-	margin-top: 1px; /* agrega un margen superior al calendario para que no se superponga con el botón */
-	margin-left: 250px; /* posiciona el calendario hacia la izquierda para que se alinee con el botón */
-}
-
-#contenedor-botones {
-	margin-top: 20px;
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	max-width: 400px; /* Ancho máximo para evitar que los botones se extiendan demasiado */
-  }
-
-#contenedor-botones-interno {
-	display: flex;
-	justify-content: flex-end;
-	margin-top: 20px;
-}
-
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	margin: 0;
-	background-color: #1b1b1b;
-	overflow: hidden; /* para que los objetos que salgan del viewport no se muestren */
-  }
-  
-  /* animación para los objetos */
-  @keyframes mover {
-	from {
-	  transform: translateY(0);
+	#contenedor-principal {
+		width: 50%;
+		max-width: 650px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 90px;
+		background-color: rgba(255, 255, 255, 0.8);
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 	}
-	to {
-	  transform: translateY(-150%);
+
+	button {
+		padding: 10px 20px;
+		background-color: #0067a3;
+		color: white;
+		border: none;
+		cursor: pointer;
 	}
-  }
-  
-  .objeto {
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	background-color: white;
-	border-radius: 50%;
-	opacity: 0.8;
-	animation: mover 10s linear infinite;
-  }
-  
-  /* estilos para los objetos específicos */
-  .objeto-1 {
-	top: 10%;
-	left: 10%;
-  }
-  
-  .objeto-2 {
-	top: 20%;
-	right: 20%;
-	animation-delay: 2s;
-  }
-  
-  .objeto-3 {
-	bottom: 10%;
-	left: 30%;
-	animation-delay: 4s;
-  }
-  
-  .objeto-4 {
-	bottom: 20%;
-	right: 10%;
-	animation-delay: 6s;
-  }
-  
-  /* añade más objetos y estilos según lo que desees */
-  #contenedor-principal {
-	/* ... */
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-  }
-  
-  #contenedor-input {
-	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  }
-  
-  #contenedor-botones {
-	margin-top: 20px;
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	max-width: 400px; /* Ancho máximo para evitar que los botones se extiendan demasiado */
-  }
-  
-  
+
+	#calendario {
+		margin-top: 20px;
+		padding: 10px;
+		position: absolute;
+		left: 0;
+		top: 50px;
+	}
+
+	.ui-datepicker {
+		font-size: 1em;
+	}
+
+	.ui-datepicker.ui-widget {
+		margin-top: 1px; /* agrega un margen superior al calendario para que no se superponga con el botón */
+		margin-left: 250px; /* posiciona el calendario hacia la izquierda para que se alinee con el botón */
+	}
+
+	#contenedor-botones {
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 400px; /* Ancho máximo para evitar que los botones se extiendan demasiado */
+	}
+
+	#contenedor-botones-interno {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 20px;
+	}
+
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		margin: 0;
+		background-color: #1b1b1b;
+		overflow: hidden; /* para que los objetos que salgan del viewport no se muestren */
+	}
+	
+	/* animación para los objetos */
+	@keyframes mover {
+		from {
+		transform: translateY(0);
+		}
+		to {
+		transform: translateY(-150%);
+		}
+	}
+
+	
+	#contenedor-principal {
+		/* ... */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	#contenedor-input {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	#contenedor-botones {
+		margin-top: 20px;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 400px; /* Ancho máximo para evitar que los botones se extiendan demasiado */
+	}
+	p #estimada{
+		font-size: 2em;
+	}

@@ -24,7 +24,7 @@ $(document).ready(function() {
 
     // Set a date and get the milliseconds
     var currentDate = new Date();
-    var targetDate = new Date('April 23, 2023 01:00:00');
+    var targetDate = new Date('May 15, 2023 01:00:00');
     var interval = targetDate.getTime() - currentDate.getTime();
 
     // Check if the countdown has reached zero

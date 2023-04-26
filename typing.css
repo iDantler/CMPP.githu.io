@@ -13,6 +13,7 @@
     border-right: 3px solid;
     font-family: monospace;
     font-size: 2em;
+    text-align: center;
   }
   
   @keyframes typing {
@@ -26,4 +27,12 @@
       border-color: transparent
     }
   }
+
+  #contenedor-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
   
