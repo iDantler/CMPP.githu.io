@@ -15,7 +15,7 @@ $(document).ready(function() {
           icon: 'error',
           title: 'Ay no :(',
           text: 'Tu deseo fue muy potente we...',
-          footer: '<a href="./gato/gato-pelao-bailando.mp4">Ven mañana y coloca otro deseo.</a>'
+          footer: '<a href="https://i.imgur.com/gyg1hJn.mp4">Ven mañana y coloca otro deseo.</a>'
         });
         return;
       }
