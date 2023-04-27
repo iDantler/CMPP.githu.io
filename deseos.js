@@ -14,7 +14,7 @@ $(document).ready(function() {
         Swal.fire({
           icon: 'error',
           title: 'Ay no :(',
-          text: 'Tu deseo fue muy potente we...',
+          text: 'Con ese suficiente por hoy...',
           footer: '<a href="https://i.imgur.com/gyg1hJn.mp4">Ven mañana y coloca otro deseo.</a>'
         });
         return;
@@ -36,10 +36,14 @@ $(document).ready(function() {
           "Deseos:": text
         },
         success: function(){
-          alert("Tu deseo está siendo procesado ♥");
+          Swal.fire({
+            icon: 'success',
+            title: 'FIUUAAAUUUMM',
+            text: 'Tu deseo está siendo procesado ♥',
+          });
           setTimeout(function() {
             location.reload();
-          }, 2000);
+          }, 3000);
         },
         error: function(){
           console.log("There was an error :(")
