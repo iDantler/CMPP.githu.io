@@ -53,4 +53,4 @@ $(document).ready(function() {
   });
 });
 
-//localStorage.clear();
+localStorage.clear();
