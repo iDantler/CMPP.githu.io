@@ -54,3 +54,81 @@ $(document).ready(function() {
 });
 
 //localStorage.clear();
+
+//Esto sera para alternat el abrir y cerrar 
+const toggleWidget = document.getElementById('deseo-pao');
+const widgetContent = document.querySelector('.widget-content');
+
+toggleWidget.addEventListener('click', () => {
+  if (widgetContent.style.display === 'block') {
+    widgetContent.style.display = 'none';
+  } else {
+    widgetContent.style.display = 'block';
+  }
+});
+
+//Este codigo sirve para avanzar y atrasar las paginas
+const pages = document.querySelectorAll('.page');
+const prevButton = document.querySelector('.prev-page');
+const nextButton = document.querySelector('.next-page');
+const pageIndicator = document.querySelector('.page-indicator');
+let currentPageIndex = 0;
+const pageCount = pages.length;
+
+function showPage(pageIndex) {
+  pages.forEach((page, index) => {
+    if (index === pageIndex) {
+      page.style.display = 'block';
+    } else {
+      page.style.display = 'none';
+    }
+  });
+
+  currentPageIndex = pageIndex;
+  updatePageIndicator();
+
+  if (currentPageIndex === 0) {
+    prevButton.classList.add('disabled');
+  } else {
+    prevButton.classList.remove('disabled');
+  }
+
+  if (currentPageIndex === pageCount - 1) {
+    nextButton.classList.add('disabled');
+  } else {
+    nextButton.classList.remove('disabled');
+  }
+}
+
+function updatePageIndicator() {
+  pageIndicator.textContent = `Página ${currentPageIndex + 1} de ${pageCount}`;
+}
+
+prevButton.addEventListener('click', () => {
+  if (currentPageIndex > 0) {
+    showPage(currentPageIndex - 1);
+  }
+});
+
+nextButton.addEventListener('click', () => {
+  if (currentPageIndex < pageCount - 1) {
+    showPage(currentPageIndex + 1);
+  }
+});
+
+showPage(currentPageIndex);
+
+//Este sirve para cuando de click, me lance una alerta.
+const deseoPao = document.getElementById("deseo-pao");
+let alertaMostrada = false;
+
+deseoPao.addEventListener("click", () => {
+  if (!alertaMostrada) {
+    Swal.fire({
+      icon: 'info',
+      title: '¡ANTES DE CONTINUAR!',
+      text: 'Esta historia no está basada en hechos reales, todo lo visto y creado en esta página es con el fin de entretener y hacer algo diferente para ti.',
+    });
+    alertaMostrada = true;
+  }
+});
