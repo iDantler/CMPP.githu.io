@@ -21,12 +21,6 @@ $(document).ready(function() {
       }
       // Guardar el deseo en el local storage
       localStorage.setItem("deseo", today.toString());
-
-      // Agregar el deseo al contenedor de textos
-      var newParagraph = document.createElement("p");
-      newParagraph.innerText = text;
-      textContainer.appendChild(newParagraph);
-      inputBox.value = "";
       
       // Enviar el deseo a la hoja de cálculo usando AJAX
       $.ajax({
@@ -53,7 +47,7 @@ $(document).ready(function() {
   });
 });
 
-//localStorage.clear();
+
 
 //Esto sera para alternat el abrir y cerrar 
 const toggleWidget = document.getElementById('deseo-pao');
@@ -132,3 +126,5 @@ deseoPao.addEventListener("click", () => {
     alertaMostrada = true;
   }
 });
+
+//localStorage.clear();
