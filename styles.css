@@ -1,118 +1,145 @@
 body {
+	background-color:#080613;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	}
+	
+	#container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
+	height: 100vh;
+	}
+	
+	#content {
+	text-align: center;
+	}
+	
+	#content h1 {
+	color: #ffffff;
+	font-size: 64px;
+	font-weight: bold;
 	margin: 0;
-	background-image: url("https://media0.giphy.com/media/g9582DNuQppxC/giphy.gif?cid=ecf05e47ckx97q1alzyegajs1r90yxs7okuft61pc3vekrnt&rid=giphy.gif&ct=g");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	background-attachment: fixed;
-	animation: animateBackground 8000s linear infinite;
-  }
-  
-	@keyframes animateBackground {
-		from {
-			background-position: 0 0;
-		}
-		to {
-			background-position: 100% 100%;
-		}
+	}
+	
+	#content p {
+	color: #ffff;
+	font-size: 24px;
+	margin: 32px 0 16px 0;
+	font-family: 'Montserrat', sans-serif;
+	}
+	
+	#input-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	
+	#button-container {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+
 	}
 
-	#contenedor-principal {
-		width: 50%;
-		max-width: 650px;
+	
+	#botones:hover {
+	background-color: transparent;
+	border: 2px solid #011f7b;
+	color: #ffff;
+	border-color: #011f7b;
+	}
+	
+	#botones:active {
+	background-color: #004c8c;
+	}
+	
+	#input-field {
+	border: none;
+	background-color: #eee;
+	padding: 12px;
+	font-size: 16px;
+	border-radius: 8px;
+	width: 300px;
+	margin-bottom: 16px;
+	}
+	
+	#input-field:focus {
+	outline: none;
+	}
+	
+	.container-border {
+		border: 1px solid #011f7b;
+		border-radius: 8px;
+		width: 836px;
+		height: 198px;
+		padding: 113px;
 		margin: 0 auto;
-		text-align: center;
-		padding: 90px;
-		background-color: rgba(255, 255, 255, 0.8);
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 	}
-
-	button {
-		padding: 10px 20px;
-		background-color: #0067a3;
-		color: white;
-		border: none;
+	
+	#botones {
+		outline: none;
+		border: 1px solid #011f7b;
 		cursor: pointer;
-	}
-
-	#calendario {
-		margin-top: 20px;
-		padding: 10px;
+		padding: 15px 20px;
+		font-size: 12px;
+		font-weight: 700;
+		color: hsl(0, 0%, 100%);
+		border-radius: 10px;
+		text-transform: uppercase;
+		transition: all 0.2s ease-in-out;
+		position: relative;
+		background-color: #080613;
+		box-shadow: rgba(233, 30, 99, 0.5);
+	  }
+	  
+	  #botones::after,
+	  #botones::before {
+		transition: all 0.2s ease-in-out;
+	  }
+	  
+	  #botones::before {
+		z-index: -1;
 		position: absolute;
-		left: 0;
-		top: 50px;
-	}
-
-	.ui-datepicker {
-		font-size: 1em;
-	}
-
-	.ui-datepicker.ui-widget {
-		margin-top: 1px; /* agrega un margen superior al calendario para que no se superponga con el botón */
-		margin-left: 250px; /* posiciona el calendario hacia la izquierda para que se alinee con el botón */
-	}
-
-	#contenedor-botones {
-		margin-top: 20px;
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
-		max-width: 400px; /* Ancho máximo para evitar que los botones se extiendan demasiado */
-	}
-
-	#contenedor-botones-interno {
-		display: flex;
-		justify-content: flex-end;
-		margin-top: 20px;
-	}
-
-	body {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-		margin: 0;
-		background-color: #1b1b1b;
-		overflow: hidden; /* para que los objetos que salgan del viewport no se muestren */
-	}
-	
-	/* animación para los objetos */
-	@keyframes mover {
-		from {
-		transform: translateY(0);
-		}
-		to {
-		transform: translateY(-150%);
-		}
-	}
-
-	
-	#contenedor-principal {
-		/* ... */
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	
-	#contenedor-input {
-		margin-top: 20px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	
-	#contenedor-botones {
-		margin-top: 20px;
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
-		max-width: 400px; /* Ancho máximo para evitar que los botones se extiendan demasiado */
-	}
-	p #estimada{
-		font-size: 2em;
-	}
+		content: "";
+		left: -2em;
+		right: -2em;
+		top: -2em;
+		bottom: -2em;
+		background-repeat: no-repeat;
+		background-image: radial-gradient(circle, #011f7b 20%, transparent 20%),
+		  radial-gradient(circle, transparent 10%, #011f7b 20%, transparent 20%),
+		  radial-gradient(circle, transparent 10%, white 20%, transparent 20%),
+		  radial-gradient(circle, #011f7b 20%, transparent 20%),
+		  radial-gradient(circle, transparent 10%, #011f7b 20%, transparent 20%),
+		  radial-gradient(circle, #011f7b 20%, transparent 20%),
+		  radial-gradient(circle, transparent 10%, #011f7b 20%, transparent 20%),
+		  radial-gradient(circle, #011f7b 20%, transparent 20%),
+		  radial-gradient(circle, transparent 10%, #011f7b 20%, transparent 20%),
+		  /*  */
+			radial-gradient(circle, transparent 10%, #011f7b 20%, transparent 20%),
+		  radial-gradient(circle, #011f7b 20%, transparent 20%),
+		  radial-gradient(circle, transparent 10%, white 20%, transparent 20%),
+		  radial-gradient(circle, #011f7b 20%, transparent 20%),
+		  radial-gradient(circle, transparent 10%, #011f7b 20%, transparent 20%),
+		  radial-gradient(circle, #011f7b 20%, transparent 20%),
+		  radial-gradient(circle, transparent 10%, white 20%, transparent 20%);
+		background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+		  10% 10%, 18% 18%, 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%,
+		  20% 20%;
+		background-position: 18% 40%, 20% 31%, 30% 30%, 40% 30%, 50% 30%, 57% 30%,
+		  65% 30%, 80% 32%, 15% 60%, 83% 60%, 18% 70%, 25% 70%, 41% 70%, 50% 70%,
+		  64% 70%, 80% 71%;
+	  }
+	  
+	  #botones:hover::before {
+		background-position: 5% 44%, -5% 20%, 7% 5%, 23% 0%, 37% 0, 58% -2%, 80% 0%,
+		  100% -2%, -5% 80%, 100% 55%, 2% 100%, 23% 100%, 42% 100%, 60% 95%, 70% 96%,
+		  100% 100%;
+		background-size: 0% 0%;
+		transition: background-position 0.1s ease-in-out,
+		  background-size 0.75s ease-in-out;
+	  }
