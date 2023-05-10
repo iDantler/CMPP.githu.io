@@ -4,7 +4,7 @@ $(function() {
 	  changeYear: true,
 	  showButtonPanel: true,
 	  dateFormat: 'dd/mm/yy',
-	  yearRange: '1950:2023'
+	  yearRange: '1995:2023'
 	});
   
 	// Esto es para el idioma (Español)

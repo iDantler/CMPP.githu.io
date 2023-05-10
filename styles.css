@@ -3,6 +3,7 @@ body {
 	font-family: Arial, sans-serif;
 	font-size: 16px;
 	margin: 0;
+	overflow-y: hidden;
 	}
 	
 	#container {
@@ -25,8 +26,12 @@ body {
 	
 	#content p {
 	color: #ffff;
-	font-size: 24px;
+
 	margin: 32px 0 16px 0;
+
+	}
+	#welcome{
+	font-size: 125%;
 	font-family: 'Montserrat', sans-serif;
 	}
 	
@@ -143,3 +148,66 @@ body {
 		transition: background-position 0.1s ease-in-out,
 		  background-size 0.75s ease-in-out;
 	  }
+
+	  /*Inicia aqui el calendario colores*/
+	  .ui-widget-header {
+		background: transparent !important;
+		border: none;
+		color: white;
+	  }
+	  
+	  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+		background: #080613;
+		border: none;
+		color: #fff;
+	  }
+	  
+	  .ui-state-default:hover, .ui-widget-content .ui-state-default:hover, .ui-widget-header .ui-state-default:hover {
+		background: transparent;
+		border: none;
+		color: #ffff;
+	  }
+	  .ui-widget {
+		border: 1px solid #011f7b !important;
+	  }
+
+	  .ui-widget-content {
+		background: #080613 !important;
+	  }
+
+	.ui-datepicker th,
+	.ui-datepicker td {
+  color: #fff;
+}
+ 
+  /* Estilo para los bordes de los cuadros de los días */
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default {
+	  background: transparent !important;
+	  border: 1px solid #011f7b !important;
+	  border-radius: 10px;
+	  color: #fff !important;
+  }
+
+  .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 26px !important;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 26px !important;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 26px !important;
+}  
+  /* Estilos para el calendario */
+  .ui-widget {
+	position: absolute !important;
+	top: 74.5% !important;
+	left: 70% !important;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	display: block;
+  }
+  
+  
