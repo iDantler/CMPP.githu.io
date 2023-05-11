@@ -1,0 +1,296 @@
+body {
+    background: #d0dcec;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #what2Say {
+    font-size: 4vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    z-index: 50;
+    border-radius: 50px;
+    padding:2px;
+    margin:34px;
+  }
+  #container {
+    height: 100vh;
+    width: 100vw;
+    cursor: default;
+  }
+  .asl {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 10vw;
+  }
+  #spelledOut{
+    background: #b8c5d6;
+    top:0%;
+    left:0%;
+    position:absolute;
+    height:100vh;
+    width:12vw;
+    margin:0 auto;
+    overflow-x: hidden;
+  }
+  .asl2 {
+    top: 5vw;
+    left: 50%;
+    position: relative;
+    margin-bottom:-8vw;
+    display:inline-block;
+    transform: translate(-50%, -50%)  scale(.3);
+  }
+  .asl3 {
+    top: 5vw;
+    left: 50%;
+    position: relative;
+    margin-bottom:-8vw;
+    display:inline-block;
+    transform: translate(-50%, -26%)  scale(.3);
+  }
+  .asl4 {
+    top: 5vw;
+    left: 50%;
+    position: relative;
+    margin-bottom:2vw;
+    display:inline-block;
+    transform: translate(-50%, -26%)  scale(.3);
+  }
+  .asl-A::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Sign_language_A.svg/323px-Sign_language_A.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 15vw;
+    height: 20vw;
+    content: "";
+  }
+  .asl-B::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sign_language_B.svg/198px-Sign_language_B.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 14vw;
+    height: 31vw;
+    transform: translate(-8%, -35%);
+    content: "";
+  }
+  
+  .asl-C::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Sign_language_C.svg/416px-Sign_language_C.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 20vw;
+    height: 20vw;
+    transform: translate(0%, 0%);
+    content: "";
+  }
+  .asl-D::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Sign_language_D.svg/242px-Sign_language_D.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 14vw;
+    height: 27vw;
+    transform: translate(-4%, -30%);
+    content: "";
+  }
+  .asl-E::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Sign_language_E.svg/286px-Sign_language_E.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 14vw;
+    height: 22vw;
+    transform: translate(-5%, -10%);
+    content: "";
+  }
+  .asl-F::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Sign_language_F.svg/244px-Sign_language_F.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 14vw;
+    height: 28vw;
+    transform: translate(-1%, -31%);
+    content: "";
+  }
+  .asl-G::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Sign_language_G.svg/491px-Sign_language_G.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 28vw;
+    height: 13vw;
+    transform: translate(-5%, 10%);
+    content: "";
+  }
+  .asl-H::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sign_language_H.svg/504px-Sign_language_H.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 28vw;
+    height: 13vw;
+    transform: translate(-5%, 10%);
+    content: "";
+  }
+  .asl-I::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Sign_language_I.svg/286px-Sign_language_I.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 14vw;
+    height: 24vw;
+    transform: translate(-2%, -20%);
+    content: "";
+  }
+  .asl-J::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Sign_language_J.svg/466px-Sign_language_J.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 22vw;
+    height: 21vw;
+    transform: translate(-10%, 0%);
+    content: "";
+  }
+  .asl-K::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sign_language_K.svg/283px-Sign_language_K.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 14vw;
+    height: 25vw;
+    transform: translate(-7%, -28%);
+    content: "";
+  }
+  .asl-L::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sign_language_L.svg/387px-Sign_language_L.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 19vw;
+    height: 25vw;
+    transform: translate(10%, -26%);
+    content: "";
+  }
+  .asl-M::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sign_language_M.svg/310px-Sign_language_M.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 14vw;
+    height: 21vw;
+    transform: translate(-7%, -4%);
+    content: "";
+  }
+  .asl-N::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Sign_language_N.svg/305px-Sign_language_N.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 14vw;
+    height: 21vw;
+    transform: translate(-7%, -8%);
+    content: "";
+  }
+  .asl-O::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Sign_language_O.svg/353px-Sign_language_O.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 16vw;
+    height: 20vw;
+    transform: translate(0%, -6%);
+    content: "";
+  }
+  .asl-P::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Sign_language_P.svg/530px-Sign_language_P.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 26vw;
+    height: 16vw;
+    transform: translate(-10%, 20%);
+    content: "";
+  }
+  .asl-Q::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Sign_language_Q.svg/384px-Sign_language_Q.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 16vw;
+    height: 20vw;
+    transform: translate(0%, 0%);
+    content: "";
+  }
+  .asl-R::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Sign_language_R.svg/233px-Sign_language_R.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 14vw;
+    height: 29vw;
+    transform: translate(-5%, -31%);
+    content: "";
+  }
+  .asl-S::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Sign_language_S.svg/336px-Sign_language_S.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 15vw;
+    height: 20vw;
+    transform: translate(0%, 0%);
+    content: "";
+  }
+  .asl-T::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sign_language_T.svg/341px-Sign_language_T.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 15vw;
+    height: 20vw;
+    transform: translate(0%, 0%);
+    content: "";
+  }
+  .asl-U::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Sign_language_U.svg/246px-Sign_language_U.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 14vw;
+    height: 30vw;
+    transform: translate(-10%, -36%);
+    content: "";
+  }
+  .asl-V::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sign_language_V.svg/249px-Sign_language_V.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 14vw;
+    height: 28vw;
+    transform: translate(-10%, -36%);
+    content: "";
+  }
+  .asl-W::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sign_language_W.svg/280px-Sign_language_W.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 14vw;
+    height: 27vw;
+    transform: translate(1%, -33%);
+    content: "";
+  }
+  .asl-X::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sign_language_X.svg/362px-Sign_language_X.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 15vw;
+    height: 22vw;
+    transform: translate(-8%, -14%);
+    content: "";
+  }
+  .asl-Y::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sign_language_Y.svg/517px-Sign_language_Y.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 23vw;
+    height: 19vw;
+    transform: translate(0%, 0%);
+    content: "";
+  }
+  .asl-Z::before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Sign_language_Z.svg/368px-Sign_language_Z.svg.png);
+    background-size: 100%;
+    display: block;
+    width: 20vw;
+    height: 31vw;
+    transform: translate(-20%, -36%);
+    content: "";
+  }

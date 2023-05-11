@@ -49,7 +49,11 @@ $(function() {
 	if (fecha.isValid() && fecha.year() == 1998 && fecha.month() == 4 && fecha.date() == 15) {
 	  window.location.href = "contador.html";
 	} else {
-	  alert("IIIINNNGGGGG ERROOOOOORRRR 404. PON LA FECHA BIEN");
+	Swal.fire({
+		icon: 'error',
+		title: 'Póngale 0 Profe',
+		text: 'Coloca bien la fecha 🤠',
+		footer: '<a>¿Será que te olvidaste de tu fecha? 🤔</a>'
+		});
 	}
-  }
-  
+  } 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./favicon/head.ico" type="image/x-icon">
+    <link rel="stylesheet" href="sign-language.css">
+    <!-- Esto es para las animaciones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <title>Feliz CUM | Lenguaje de Señas</title>
+
+</head>
+<body data-simplebar="init">
+    <input type="text" id="what2Say" title="Empieza por aqui y abajo tendrás resultados." placeholder="Toca aquí..." onchange="words2Faces(this.value)">
+
+    <div id="container">
+        <div id="aslContainer" title="ASL" class="asl asl-A"></div>
+        <!--<div id="templateFist" class="asl asl-a"></div>-->
+    </div>
+    
+    <div id="spelledOut"></div>
+
+    <script src="language.js"></script>
+
+</body>
+</html>

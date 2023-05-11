@@ -127,4 +127,10 @@ deseoPao.addEventListener("click", () => {
   }
 });
 
+//Esto redirige a la pagina sign
+function redirectToSignLanguage() {
+  window.location.href = "sign_language.html";
+}
+
+
 //localStorage.clear();
