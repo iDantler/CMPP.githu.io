@@ -74,10 +74,10 @@ function words2Faces(userText) {
   }
 
   
-  //add a rest face at the end
+  //Agrega una cara de descanso al final
   //allofEm.push("rest");
 
-  //this function spits out an array of class names coresponding to the animation face of each phoneme when called
+  //Esta función arroja una serie de nombres de clase correspondientes a la cara de animación de cada fonema cuando se llama
   return allofEm;
 } //END
 

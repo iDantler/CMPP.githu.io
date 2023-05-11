@@ -112,7 +112,7 @@ nextButton.addEventListener('click', () => {
 
 showPage(currentPageIndex);
 
-//Este sirve para cuando de click, me lance una alerta.
+//Este sirve para cuando de click al Deseo de Shion, me lance una alerta.
 const deseoPao = document.getElementById("deseo-pao");
 let alertaMostrada = false;
 
@@ -127,7 +127,7 @@ deseoPao.addEventListener("click", () => {
   }
 });
 
-//Esto redirige a la pagina sign
+//Esto redirige a la pagina sign, luego de haber dado click al Deseo de Lenguaje de Señas.
 function redirectToSignLanguage() {
   window.location.href = "sign_language.html";
 }
